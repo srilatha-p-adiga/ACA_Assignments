@@ -1,0 +1,100 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;6. Consider a 32-bit number present in 0x40000000. Find
+                        the number of ones and zero present in the 32-bit numbe
+                       r. 
+    2 00000000         ; Store the result in 0x40000004 and 0x40000008. 
+    3 00000000         
+    4 00000000                 AREA             RESET,CODE,READONLY
+    5 00000000                 ENTRY
+    6 00000000         
+    7 00000000         MAIN
+    8 00000000 E3A00101        LDR              R0, =0x40000000 ;Load the addre
+                                                            ss of value1
+    9 00000004 E5901000        LDR              R1, [R0]    ;Store value locate
+                                                            d at address pointe
+                                                            d by R0
+   10 00000008 E3A02020        MOV              R2, #32     ;Counter set to 31F
+                                                            
+   11 0000000C         
+   12 0000000C         JUMP
+   13 0000000C E1B010A1        MOVS             R1, R1, LSR #1 ;Logical right s
+                                                            hift by 1 bit and s
+                                                            et carry if carry i
+                                                            s generated
+   14 00000010 22833001        ADDCS            R3, R3, #1  ;R3 holds number of
+                                                             ones
+   15 00000014 32844001        ADDCC            R4, R4, #1  ;R4 holds the numbe
+                                                            r of zeros
+   16 00000018 E2422001        SUB              R2, R2, #1  ;Decrementing count
+                                                             by 1
+   17 0000001C E3520000        CMP              R2, #00     ;Check if counter h
+                                                            as reached the msb 
+                                                            (32nd bit)
+   18 00000020 1AFFFFF9        BNE              JUMP
+   19 00000024 E3A00111        LDR              R0, =0x40000004 ;Load the addre
+                                                            ss where number of 
+                                                            1s are to be stored
+                                                            
+   20 00000028 E5803000        STR              R3, [R0]    ;Store the count of
+                                                             1s in the address 
+                                                            stored in R0
+   21 0000002C E5804004        STR              R4, [R0, #4] ;Store the count o
+                                                            f 1s in the address
+                                                             stored in R0, afte
+                                                            r incrementing loca
+                                                            tion by 4 bytes (32
+                                                             bits)
+   22 00000030         
+   23 00000030 EAFFFFFE 
+                       STOP    B                STOP
+   24 00000034                 END
+Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
+bjects\number_of_zeros_and_ones.d -o.\objects\number_of_zeros_and_ones.o -IC:\K
+eil_v5\ARM\RV31\INC -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" 
+--predefine="__UVISION_VERSION SETA 529" --list=.\listings\number_of_zeros_and_
+ones.lst number_of_zeros_and_ones.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+JUMP 0000000C
+
+Symbol: JUMP
+   Definitions
+      At line 12 in file number_of_zeros_and_ones.s
+   Uses
+      At line 18 in file number_of_zeros_and_ones.s
+Comment: JUMP used once
+MAIN 00000000
+
+Symbol: MAIN
+   Definitions
+      At line 7 in file number_of_zeros_and_ones.s
+   Uses
+      None
+Comment: MAIN unused
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 4 in file number_of_zeros_and_ones.s
+   Uses
+      None
+Comment: RESET unused
+STOP 00000030
+
+Symbol: STOP
+   Definitions
+      At line 23 in file number_of_zeros_and_ones.s
+   Uses
+      At line 23 in file number_of_zeros_and_ones.s
+Comment: STOP used once
+4 symbols
+336 symbols in table

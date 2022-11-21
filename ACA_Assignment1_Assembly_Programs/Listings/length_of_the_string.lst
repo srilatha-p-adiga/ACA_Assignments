@@ -1,0 +1,128 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ; 7. Find the length of the string character.
+    2 00000000         
+    3 00000000                 AREA             Reset, CODE, READONLY
+    4 00000000                 ENTRY
+    5 00000000         Main
+    6 00000000 E59F0028        LDR              R0, =Data1  ; Load the address 
+                                                            of the lookup table
+                                                            
+    7 00000004 E0211001        EOR              R1,R1,R1    ; Clear the registe
+                                                            r R1 to store the c
+                                                            ontents
+    8 00000008 E59F401C        LDR              R4, CharCount ; Initialze the c
+                                                            haracter counter
+    9 0000000C         
+   10 0000000C         Loop
+   11 0000000C E4D02001        LDRB             R2, [R0], #1 ; Load the first b
+                                                            yte into R2
+   12 00000010 E352000D        CMP              R2, #CR     ; Compare with Carr
+                                                            iage Return
+   13 00000014 0A000001        BEQ              Done        ; Branch to Done if
+                                                             R2 and CR are equa
+                                                            l
+   14 00000018 E2811001        ADD              R1,R1, #1   ; Increment the Cou
+                                                            nter value
+   15 0000001C EAFFFFFA        BAL              Loop        ; Branch to Loop un
+                                                            til the counter rea
+                                                            ches last character
+                                                            
+   16 00000020         Done
+   17 00000020 E5841000        STR              R1, [R4]    ; Store the string 
+                                                            length count in R4
+   18 00000024         
+   19 00000024         Data1
+   20 00000024 48 65 6C 
+              6C 6F 0D         DCB              "Hello", CR
+   21 0000002A 00 00           ALIGN
+   22 0000002C         
+   23 0000002C 40000000 
+                       CharCount
+                               DCD              &40000000
+   24 00000030 0000000D 
+                       CR      EQU              0x0D
+   25 00000030         
+   26 00000030                 END
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
+bjects\length_of_the_string.d -o.\objects\length_of_the_string.o -IC:\Keil_v5\A
+RM\RV31\INC -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predef
+ine="__UVISION_VERSION SETA 529" --list=.\listings\length_of_the_string.lst len
+gth_of_the_string.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+CharCount 0000002C
+
+Symbol: CharCount
+   Definitions
+      At line 23 in file length_of_the_string.s
+   Uses
+      At line 8 in file length_of_the_string.s
+Comment: CharCount used once
+Data1 00000024
+
+Symbol: Data1
+   Definitions
+      At line 19 in file length_of_the_string.s
+   Uses
+      At line 6 in file length_of_the_string.s
+Comment: Data1 used once
+Done 00000020
+
+Symbol: Done
+   Definitions
+      At line 16 in file length_of_the_string.s
+   Uses
+      At line 13 in file length_of_the_string.s
+Comment: Done used once
+Loop 0000000C
+
+Symbol: Loop
+   Definitions
+      At line 10 in file length_of_the_string.s
+   Uses
+      At line 15 in file length_of_the_string.s
+Comment: Loop used once
+Main 00000000
+
+Symbol: Main
+   Definitions
+      At line 5 in file length_of_the_string.s
+   Uses
+      None
+Comment: Main unused
+Reset 00000000
+
+Symbol: Reset
+   Definitions
+      At line 3 in file length_of_the_string.s
+   Uses
+      None
+Comment: Reset unused
+6 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+CR 0000000D
+
+Symbol: CR
+   Definitions
+      At line 24 in file length_of_the_string.s
+   Uses
+      At line 12 in file length_of_the_string.s
+      At line 20 in file length_of_the_string.s
+
+1 symbol
+341 symbols in table

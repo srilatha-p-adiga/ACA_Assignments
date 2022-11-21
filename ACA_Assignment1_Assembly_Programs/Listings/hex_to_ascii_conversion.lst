@@ -1,0 +1,83 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;9. Convert a given number from 0x40000000 hex value to 
+                       ASCII.
+    2 00000000                 AREA             PROGRAM,CODE,READONLY
+    3 00000000                 ENTRY
+    4 00000000         MAIN
+    5 00000000 E3A00101        LDR              R0,=0x40000000 ; Load the base 
+                                                            address with R0=0x4
+                                                            0000000
+    6 00000004 E5D00000        LDRB             R0,[R0]     ; Load the contents
+                                                             into R0
+    7 00000008 E350000A        CMP              R0,#0x0A    ; Compare if R0 is 
+                                                            less than 0x0A(10 i
+                                                            n decimal) i.e 0-9
+    8 0000000C BA000000        BLT              NEXT        ; If less than 9 br
+                                                            anch to NEXT
+    9 00000010 E2800007        ADD              R0,R0,#7    ; If R0 IS greater 
+                                                            than R0 and 7
+   10 00000014         
+   11 00000014         NEXT
+   12 00000014 E2800030        ADD              R0,R0,#0x30 ; If less than 9 AD
+                                                            D 30 
+   13 00000018 E3A02111        LDR              R2,=0x40000004 ; Load the addre
+                                                            ss location value R
+                                                            2 with 0x40000004 w
+                                                            here the result has
+                                                             to be stored
+   14 0000001C E5C20000        STRB             R0,[R2]     ; Store the result 
+                                                            in R2
+   15 00000020         STOP
+   16 00000020 EAFFFFFE        B                STOP
+   17 00000024         
+   18 00000024                 END
+Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
+bjects\hex_to_ascii_conversion.d -o.\objects\hex_to_ascii_conversion.o -IC:\Kei
+l_v5\ARM\RV31\INC -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --
+predefine="__UVISION_VERSION SETA 529" --list=.\listings\hex_to_ascii_conversio
+n.lst hex_to_ascii_conversion.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+MAIN 00000000
+
+Symbol: MAIN
+   Definitions
+      At line 4 in file hex_to_ascii_conversion.s
+   Uses
+      None
+Comment: MAIN unused
+NEXT 00000014
+
+Symbol: NEXT
+   Definitions
+      At line 11 in file hex_to_ascii_conversion.s
+   Uses
+      At line 8 in file hex_to_ascii_conversion.s
+Comment: NEXT used once
+PROGRAM 00000000
+
+Symbol: PROGRAM
+   Definitions
+      At line 2 in file hex_to_ascii_conversion.s
+   Uses
+      None
+Comment: PROGRAM unused
+STOP 00000020
+
+Symbol: STOP
+   Definitions
+      At line 15 in file hex_to_ascii_conversion.s
+   Uses
+      At line 16 in file hex_to_ascii_conversion.s
+Comment: STOP used once
+4 symbols
+336 symbols in table

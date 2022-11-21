@@ -1,0 +1,86 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;3. Find the factorial of a number. 
+    2 00000000         
+    3 00000000                 AREA             RESET, CODE, READONLY
+    4 00000000                 ENTRY
+    5 00000000         
+    6 00000000         START
+    7 00000000 E59F0018        LDR              R0, NUM     ; Load the value of
+                                                             which the factoria
+                                                            l to be calculated 
+                                                            
+    8 00000004 E2401001        SUB              R1, R0, #1  ; R1=R0-1
+    9 00000008         TOP
+   10 00000008 E3510000        CMP              R1, #0      ; Check if the valu
+                                                            e is 0
+   11 0000000C 0A000002        BEQ              STOP        ; Branch to stop if
+                                                             the value is 0
+   12 00000010 E0000091        MUL              R0, R1,R0   ; R0=R0*R1
+   13 00000014 E2411001        SUB              R1,R1, #1   ; Decrement the cou
+                                                            nter value R1=R1-1
+   14 00000018 EAFFFFFA        B                TOP         ; Branch to top
+   15 0000001C         
+   16 0000001C EAFFFFFE 
+                       STOP    B                STOP
+   17 00000020 00000005 
+                       NUM     DCD              5
+   18 00000024         
+   19 00000024                 END
+Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
+bjects\factorial.d -o.\objects\factorial.o -IC:\Keil_v5\ARM\RV31\INC -IC:\Keil_
+v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION
+ SETA 529" --list=.\listings\factorial.lst factorial.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+NUM 00000020
+
+Symbol: NUM
+   Definitions
+      At line 17 in file factorial.s
+   Uses
+      At line 7 in file factorial.s
+Comment: NUM used once
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 3 in file factorial.s
+   Uses
+      None
+Comment: RESET unused
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 6 in file factorial.s
+   Uses
+      None
+Comment: START unused
+STOP 0000001C
+
+Symbol: STOP
+   Definitions
+      At line 16 in file factorial.s
+   Uses
+      At line 11 in file factorial.s
+      At line 16 in file factorial.s
+
+TOP 00000008
+
+Symbol: TOP
+   Definitions
+      At line 9 in file factorial.s
+   Uses
+      At line 14 in file factorial.s
+Comment: TOP used once
+5 symbols
+337 symbols in table

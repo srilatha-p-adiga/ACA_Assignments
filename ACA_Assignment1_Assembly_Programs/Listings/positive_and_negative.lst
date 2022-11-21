@@ -1,0 +1,105 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;8. Find whether the 32-bit number is negative or a posi
+                       tive number.
+    2 00000000                 AREA             RESET, CODE, READONLY
+    3 00000000                 ENTRY
+    4 00000000         MAIN
+    5 00000000 E59F0020        LDR              R0, NUM     ; Load the register
+                                                             R0 with the number
+                                                            
+    6 00000004 E59F1020        LDR              R1, COMPARE ; Load R1 with comp
+                                                            are variable of val
+                                                            ue 0x80000000 to ch
+                                                            eck for negative nu
+                                                            mber
+    7 00000008 E0011000        AND              R1, R1, R0  ; And R1(compare va
+                                                            riable) and R0(actu
+                                                            al value)
+    8 0000000C E3510000        CMP              R1, #0      ; Check if R1=0
+    9 00000010 0A000001        BEQ              POS         ; If R1=0 the numbe
+                                                            r is positive hence
+                                                             branch to POS
+   10 00000014 E3A00001        MOV              R0, #1      ; If number is nega
+                                                            tive make R0=1
+   11 00000018 EA000001        B                STOP
+   12 0000001C         POS
+   13 0000001C E3A00000        MOV              R0, #0      ; If number is posi
+                                                            tive make R0=0
+   14 00000020 EAFFFFFF        B                STOP
+   15 00000024 EAFFFFFE 
+                       STOP    B                STOP
+   16 00000028         
+   17 00000028 82345678 
+                       NUM     DCD              0x82345678
+   18 0000002C 80000000 
+                       COMPARE DCD              0x80000000
+   19 00000030         
+   20 00000030                 END
+Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
+bjects\positive_and_negative.d -o.\objects\positive_and_negative.o -IC:\Keil_v5
+\ARM\RV31\INC -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --pred
+efine="__UVISION_VERSION SETA 529" --list=.\listings\positive_and_negative.lst 
+positive_and_negative.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+COMPARE 0000002C
+
+Symbol: COMPARE
+   Definitions
+      At line 18 in file positive_and_negative.s
+   Uses
+      At line 6 in file positive_and_negative.s
+Comment: COMPARE used once
+MAIN 00000000
+
+Symbol: MAIN
+   Definitions
+      At line 4 in file positive_and_negative.s
+   Uses
+      None
+Comment: MAIN unused
+NUM 00000028
+
+Symbol: NUM
+   Definitions
+      At line 17 in file positive_and_negative.s
+   Uses
+      At line 5 in file positive_and_negative.s
+Comment: NUM used once
+POS 0000001C
+
+Symbol: POS
+   Definitions
+      At line 12 in file positive_and_negative.s
+   Uses
+      At line 9 in file positive_and_negative.s
+Comment: POS used once
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 2 in file positive_and_negative.s
+   Uses
+      None
+Comment: RESET unused
+STOP 00000024
+
+Symbol: STOP
+   Definitions
+      At line 15 in file positive_and_negative.s
+   Uses
+      At line 11 in file positive_and_negative.s
+      At line 14 in file positive_and_negative.s
+      At line 15 in file positive_and_negative.s
+
+6 symbols
+338 symbols in table

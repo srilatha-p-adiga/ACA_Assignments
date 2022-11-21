@@ -1,0 +1,77 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ; 5. Consider an array of 5 32-numbers present from loca
+                       tion 0x40000000. Find the sum of these numbers and store
+                        back in 0x40001000.
+    2 00000000         
+    3 00000000                 AREA             RESET, CODE, READONLY
+    4 00000000                 ENTRY
+    5 00000000         
+    6 00000000         Main
+    7 00000000 E3A00005        LDR              R0, =5      ; Initializing coun
+                                                            ter register
+    8 00000004 E3A01101        LDR              R1, =0x40000000 ; Loading base 
+                                                            address to a regist
+                                                            er
+    9 00000008         LOOP
+   10 00000008 E4912004        LDR              R2,[R1],#4  ; Loading value fro
+                                                            m array and updatin
+                                                            g (increment) the a
+                                                            ddress 
+   11 0000000C E0833002        ADD              R3,R3,R2    ; Sum is stored in 
+                                                            R3 register
+   12 00000010 E2400001        SUB              R0, R0, #1  ; Decrementing coun
+                                                            ter value
+   13 00000014 E3500000        CMP              R0, #00     ; Checking counter 
+                                                            value
+   14 00000018 1AFFFFFA        BNE              LOOP
+   15 0000001C E59F4000        LDR              R4, =0x40001000 ; Load the addr
+                                                            ess location where 
+                                                            the result has to b
+                                                            e stored
+   16 00000020 E5843000        STR              R3, [R4]    ; Store the Result 
+                                                            in R4
+   17 00000024         
+   18 00000024                 END
+              40001000 
+Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
+bjects\array_5_32_bit_add.d -o.\objects\array_5_32_bit_add.o -IC:\Keil_v5\ARM\R
+V31\INC -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predefine=
+"__UVISION_VERSION SETA 529" --list=.\listings\array_5_32_bit_add.lst array_5_3
+2_bit_add.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+LOOP 00000008
+
+Symbol: LOOP
+   Definitions
+      At line 9 in file array_5_32_bit_add.s
+   Uses
+      At line 14 in file array_5_32_bit_add.s
+Comment: LOOP used once
+Main 00000000
+
+Symbol: Main
+   Definitions
+      At line 6 in file array_5_32_bit_add.s
+   Uses
+      None
+Comment: Main unused
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 3 in file array_5_32_bit_add.s
+   Uses
+      None
+Comment: RESET unused
+3 symbols
+337 symbols in table

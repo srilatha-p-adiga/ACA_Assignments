@@ -1,0 +1,99 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;10. Using subroutine, find the factorial of a number. 
+    2 00000000         
+    3 00000000                 AREA             RESET, CODE, READONLY
+    4 00000000                 ENTRY
+    5 00000000         
+    6 00000000 E3A00006        LDR              R0,=06      ; Load R0 with valu
+                                                            e 5 (number of whic
+                                                            h the factorial has
+                                                             to be calculated)
+    7 00000004 EB000000        BL               factorial   ; Branch to factori
+                                                            al
+    8 00000008 EAFFFFFE 
+                       STOP    B                STOP
+    9 0000000C         
+   10 0000000C         factorial
+   11 0000000C E92D4010        PUSH             {R4,LR}     ;push R4 and LR ont
+                                                            o the top of the st
+                                                            ack ;stack<=>sdmdb 
+                                                            sp!,{R4,LR} 
+   12 00000010 E1A04000        MOV              R4,R0       ;make a copy of R0 
+                                                            
+   13 00000014 E3500000        CMP              R0,#0       ;compare R0 with 0 
+                                                            
+   14 00000018 1A000001        BNE              not_zero    ;branch to not_zero
+                                                             if not equal  
+   15 0000001C E3A00001        MOV              R0,#1       ;R0=1 
+   16 00000020 EA000003        B                last
+   17 00000024         not_zero
+   18 00000024 E2400001        SUB              R0,R0,#1    ;R0=R0-1 
+   19 00000028 EBFFFFF7        BL               factorial   ;call recursively f
+                                                            actorial 
+   20 0000002C E1A01004        MOV              R1,R4
+   21 00000030 E0000091        MUL              R0,R1,R0    ;R0=R0*R1 
+   22 00000034         last
+   23 00000034 E8BD4010        POP              {R4,LR}     ;pop <=> ldmia sp! 
+                                                            {r4,lr} 
+   24 00000038 E12FFF1E        BX               LR
+   25 0000003C         
+   26 0000003C                 END
+Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
+bjects\factorial_subroutine.d -o.\objects\factorial_subroutine.o -IC:\Keil_v5\A
+RM\RV31\INC -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predef
+ine="__UVISION_VERSION SETA 529" --list=.\listings\factorial_subroutine.lst fac
+torial_subroutine.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 3 in file factorial_subroutine.s
+   Uses
+      None
+Comment: RESET unused
+STOP 00000008
+
+Symbol: STOP
+   Definitions
+      At line 8 in file factorial_subroutine.s
+   Uses
+      At line 8 in file factorial_subroutine.s
+Comment: STOP used once
+factorial 0000000C
+
+Symbol: factorial
+   Definitions
+      At line 10 in file factorial_subroutine.s
+   Uses
+      At line 7 in file factorial_subroutine.s
+      At line 19 in file factorial_subroutine.s
+
+last 00000034
+
+Symbol: last
+   Definitions
+      At line 22 in file factorial_subroutine.s
+   Uses
+      At line 16 in file factorial_subroutine.s
+Comment: last used once
+not_zero 00000024
+
+Symbol: not_zero
+   Definitions
+      At line 17 in file factorial_subroutine.s
+   Uses
+      At line 14 in file factorial_subroutine.s
+Comment: not_zero used once
+5 symbols
+337 symbols in table

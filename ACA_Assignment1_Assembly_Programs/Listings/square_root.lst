@@ -1,0 +1,104 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;4. Find the square root of a number present in 0x400000
+                       00. Store the result back in 0x40000030 
+    2 00000000         
+    3 00000000                 AREA             RESET,CODE,READONLY
+    4 00000000                 ENTRY
+    5 00000000         
+    6 00000000         Main
+    7 00000000 E3A02101        LDR              R2,=0x40000000 ; Load R2 with a
+                                                            ddress location 0x4
+                                                            0000000
+    8 00000004 E5922000        LDR              R2,[R2]     ; Load the contents
+                                                             in R2
+    9 00000008 E3A00001        LDR              R0,=0x01    ; Initialize a coun
+                                                            ter R0=1
+   10 0000000C E3A01001        LDR              R1,=0x01    ; Initialize a coun
+                                                            ter R1=1
+   11 00000010         
+   12 00000010         loop1
+   13 00000010 E0422000        SUB              R2,R2,R0    ; Initially subtrac
+                                                            t R2=R2-R0
+   14 00000014 E3520000        CMP              R2,#0       ; Check if R2 is ze
+                                                            ro ; R2=0
+   15 00000018 0A000002        BEQ              loop        ; Branch to loop if
+                                                             R2=0
+   16 0000001C E2800002        ADD              R0,#2       ; Increment R0 by 2
+                                                             every time ; R0=R0
+                                                            +2
+   17 00000020 E2811001        ADD              R1,#1       ; Increment R1 by 1
+                                                             every time ; R1=R1
+                                                            +1 ; Number of iter
+                                                            ations of R1 gives 
+                                                            the square root val
+                                                            ue
+   18 00000024 EAFFFFF9        B                loop1       ; Branch to loop1
+   19 00000028         
+   20 00000028         loop
+   21 00000028 E3A031C1        LDR              R3, =0x40000030 ; Load R3 with 
+                                                            address 0x40000030 
+                                                            where the result ha
+                                                            s to be stored
+   22 0000002C E5831000        STR              R1, [R3]    ; Store the result 
+                                                            value in R1
+   23 00000030 EAFFFFFE 
+                       STOP    B                STOP
+   24 00000034         
+   25 00000034                 END
+Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
+bjects\square_root.d -o.\objects\square_root.o -IC:\Keil_v5\ARM\RV31\INC -IC:\K
+eil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VER
+SION SETA 529" --list=.\listings\square_root.lst square_root.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Main 00000000
+
+Symbol: Main
+   Definitions
+      At line 6 in file square_root.s
+   Uses
+      None
+Comment: Main unused
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 3 in file square_root.s
+   Uses
+      None
+Comment: RESET unused
+STOP 00000030
+
+Symbol: STOP
+   Definitions
+      At line 23 in file square_root.s
+   Uses
+      At line 23 in file square_root.s
+Comment: STOP used once
+loop 00000028
+
+Symbol: loop
+   Definitions
+      At line 20 in file square_root.s
+   Uses
+      At line 15 in file square_root.s
+Comment: loop used once
+loop1 00000010
+
+Symbol: loop1
+   Definitions
+      At line 12 in file square_root.s
+   Uses
+      At line 18 in file square_root.s
+Comment: loop1 used once
+5 symbols
+337 symbols in table
