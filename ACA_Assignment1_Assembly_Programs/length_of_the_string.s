@@ -14,7 +14,7 @@ Loop
 	ADD R1,R1, #1       ; Increment the Counter value
 	BAL Loop            ; Branch to Loop until the counter reaches last character
 Done 
-	STR R1, [R4]        ; Store the string length count in R4
+	STR R1, [R4]        ; Store the string length count in register R1
 	
 Data1
 	DCB "Hello", CR

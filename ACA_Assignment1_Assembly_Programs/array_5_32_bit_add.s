@@ -13,6 +13,6 @@ LOOP
 	 CMP R0, #00          ; Checking counter value
 	 BNE LOOP
 	 LDR R4, =0x40001000  ; Load the address location where the result has to be stored
-	 STR R3, [R4]         ; Store the Result in R4
+	 STR R3, [R4]         ; Store the Result in register R3 and location 0x40001000
 	  
 	 END
