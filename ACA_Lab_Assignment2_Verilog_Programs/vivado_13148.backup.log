@@ -1,0 +1,1194 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 23 09:41:58 2022
+# Process ID: 13148
+# Current directory: G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10224 G:\Srilatha - Manipal\M.E - Embedded Systems\4. ACA\Lab\Verilog Programs\ACA_Assignment2\ACA_Lab_Assignment2\ACA_Lab_Assignment2.xpr
+# Log file: G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/vivado.log
+# Journal file: G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 681.020 ; gain = 50.363
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_four_bit_fa' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_four_bit_fa_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_bit_fa_behav xil_defaultlib.tb_four_bit_fa xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_bit_fa_behav xil_defaultlib.tb_four_bit_fa xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <four_bit_fulladder> not found while processing module instance <uut> [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_four_bit_fa.v:29]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 754.758 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_four_bit_fa' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_four_bit_fa_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/Full_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_bit_FA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_FA
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_four_bit_fa.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_four_bit_fa
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_bit_fa_behav xil_defaultlib.tb_four_bit_fa xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_bit_fa_behav xil_defaultlib.tb_four_bit_fa xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Full_Adder
+Compiling module xil_defaultlib.four_bit_FA
+Compiling module xil_defaultlib.tb_four_bit_fa
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_four_bit_fa_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 754.758 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_four_bit_fa_behav -key {Behavioral:sim_1:Functional:tb_four_bit_fa} -tclbatch {tb_four_bit_fa.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_four_bit_fa.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 764.477 ; gain = 9.719
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_four_bit_fa_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 764.477 ; gain = 9.719
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 771.375 ; gain = 6.898
+close [ open {G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v} w ]
+add_files {{G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v}}
+update_compile_order -fileset sources_1
+set_property top four_to_one_mux [current_fileset]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_four_to_one_mux.v} w ]
+add_files -fileset sim_1 {{G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_four_to_one_mux.v}}
+update_compile_order -fileset sim_1
+set_property top tb_four_to_one_mux [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_four_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_four_to_one_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_four_to_one_mux
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_to_one_mux_behav xil_defaultlib.tb_four_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_to_one_mux_behav xil_defaultlib.tb_four_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.four_to_one_mux
+Compiling module xil_defaultlib.tb_four_to_one_mux
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_four_to_one_mux_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 779.273 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_four_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_four_to_one_mux} -tclbatch {tb_four_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_four_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_four_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 779.273 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 781.199 ; gain = 0.973
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_four_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_four_to_one_mux_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_to_one_mux_behav xil_defaultlib.tb_four_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_to_one_mux_behav xil_defaultlib.tb_four_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_four_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_four_to_one_mux} -tclbatch {tb_four_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_four_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_four_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 781.199 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_four_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_four_to_one_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_four_to_one_mux
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_to_one_mux_behav xil_defaultlib.tb_four_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_to_one_mux_behav xil_defaultlib.tb_four_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.four_to_one_mux
+Compiling module xil_defaultlib.tb_four_to_one_mux
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_four_to_one_mux_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_four_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_four_to_one_mux} -tclbatch {tb_four_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_four_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_four_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 929.141 ; gain = 22.742
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_four_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_four_to_one_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_four_to_one_mux
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_to_one_mux_behav xil_defaultlib.tb_four_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_to_one_mux_behav xil_defaultlib.tb_four_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.four_to_one_mux
+Compiling module xil_defaultlib.tb_four_to_one_mux
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_four_to_one_mux_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_four_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_four_to_one_mux} -tclbatch {tb_four_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_four_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_four_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 929.141 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_four_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_four_to_one_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_four_to_one_mux
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_to_one_mux_behav xil_defaultlib.tb_four_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_to_one_mux_behav xil_defaultlib.tb_four_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.four_to_one_mux
+Compiling module xil_defaultlib.tb_four_to_one_mux
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_four_to_one_mux_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_four_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_four_to_one_mux} -tclbatch {tb_four_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_four_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_four_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 929.141 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open {G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/sixteen_to_one_mux.v} w ]
+add_files {{G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/sixteen_to_one_mux.v}}
+update_compile_order -fileset sources_1
+set_property top sixteen_to_one_mux [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v} w ]
+add_files {{G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v}}
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_four_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_four_to_one_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_four_to_one_mux
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_to_one_mux_behav xil_defaultlib.tb_four_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_four_to_one_mux_behav xil_defaultlib.tb_four_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.four_to_one_mux
+Compiling module xil_defaultlib.tb_four_to_one_mux
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_four_to_one_mux_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 929.141 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_four_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_four_to_one_mux} -tclbatch {tb_four_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_four_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_four_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 929.141 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top tb_sixteen_to_one_mux [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_sixteen_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_sixteen_to_one_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sixteen_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_sixteen_to_one_mux
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'S' [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.four_to_one_mux
+Compiling module xil_defaultlib.sixteen_to_one_mux
+Compiling module xil_defaultlib.tb_sixteen_to_one_mux
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_sixteen_to_one_mux_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 929.141 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_sixteen_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_sixteen_to_one_mux} -tclbatch {tb_sixteen_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_sixteen_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_sixteen_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 929.141 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 929.141 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_sixteen_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_sixteen_to_one_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sixteen_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_sixteen_to_one_mux
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'S' [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.four_to_one_mux
+Compiling module xil_defaultlib.sixteen_to_one_mux
+Compiling module xil_defaultlib.tb_sixteen_to_one_mux
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_sixteen_to_one_mux_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_sixteen_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_sixteen_to_one_mux} -tclbatch {tb_sixteen_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_sixteen_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_sixteen_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 952.797 ; gain = 8.363
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_sixteen_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_sixteen_to_one_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sixteen_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_sixteen_to_one_mux
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'S' [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.four_to_one_mux
+Compiling module xil_defaultlib.sixteen_to_one_mux
+Compiling module xil_defaultlib.tb_sixteen_to_one_mux
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_sixteen_to_one_mux_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_sixteen_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_sixteen_to_one_mux} -tclbatch {tb_sixteen_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_sixteen_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_sixteen_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 952.797 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_sixteen_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_sixteen_to_one_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sixteen_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_sixteen_to_one_mux
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'S' [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.four_to_one_mux
+Compiling module xil_defaultlib.sixteen_to_one_mux
+Compiling module xil_defaultlib.tb_sixteen_to_one_mux
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_sixteen_to_one_mux_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_sixteen_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_sixteen_to_one_mux} -tclbatch {tb_sixteen_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_sixteen_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 55 ns : File "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_sixteen_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1040.723 ; gain = 8.527
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_sixteen_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_sixteen_to_one_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sixteen_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_sixteen_to_one_mux
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'S' [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.four_to_one_mux
+Compiling module xil_defaultlib.sixteen_to_one_mux
+Compiling module xil_defaultlib.tb_sixteen_to_one_mux
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_sixteen_to_one_mux_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_sixteen_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_sixteen_to_one_mux} -tclbatch {tb_sixteen_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_sixteen_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_sixteen_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1047.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1087.754 ; gain = 40.012
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_sixteen_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_sixteen_to_one_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sixteen_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_sixteen_to_one_mux
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'S' [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.four_to_one_mux
+Compiling module xil_defaultlib.sixteen_to_one_mux
+Compiling module xil_defaultlib.tb_sixteen_to_one_mux
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_sixteen_to_one_mux_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_sixteen_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_sixteen_to_one_mux} -tclbatch {tb_sixteen_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_sixteen_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_sixteen_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1087.754 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_sixteen_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_sixteen_to_one_mux_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'S' [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v:30]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_sixteen_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_sixteen_to_one_mux} -tclbatch {tb_sixteen_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_sixteen_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_sixteen_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1087.754 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open {G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/Priority_Encoder.v} w ]
+add_files {{G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/Priority_Encoder.v}}
+update_compile_order -fileset sources_1
+set_property top Priority_Encoder [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/Priority_Encoder.v}}] -no_script -reset -force -quiet
+remove_files  {{G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/Priority_Encoder.v}}
+remove_files  {{G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/Priority_Encoder.v}}
+WARNING: [Vivado 12-818] No files matched 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/Priority_Encoder.v'
+update_compile_order -fileset sources_1
+close [ open {G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/priority_encode.v} w ]
+add_files {{G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/priority_encode.v}}
+update_compile_order -fileset sources_1
+set_property top priority_encode [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_sixteen_to_one_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_sixteen_to_one_mux_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/four_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sixteen_to_one_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_sixteen_to_one_mux
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1087.754 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_sixteen_to_one_mux_behav xil_defaultlib.tb_sixteen_to_one_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.four_to_one_mux
+Compiling module xil_defaultlib.sixteen_to_one_mux
+Compiling module xil_defaultlib.tb_sixteen_to_one_mux
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_sixteen_to_one_mux_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1087.754 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_sixteen_to_one_mux_behav -key {Behavioral:sim_1:Functional:tb_sixteen_to_one_mux} -tclbatch {tb_sixteen_to_one_mux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_sixteen_to_one_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/tb_sixteen_to_one_mux.v" Line 42
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1087.754 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_sixteen_to_one_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:27 . Memory (MB): peak = 1087.754 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_priority_encoder.v} w ]
+add_files -fileset sim_1 {{G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_priority_encoder.v}}
+update_compile_order -fileset sim_1
+set_property top tb_priority_encoder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_priority_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_priority_encoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/priority_encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority_encode
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_priority_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_priority_encoder
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_priority_encoder_behav xil_defaultlib.tb_priority_encoder xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_priority_encoder_behav xil_defaultlib.tb_priority_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_priority_encoder.v:27]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1087.754 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_priority_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_priority_encoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/priority_encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority_encode
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_priority_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_priority_encoder
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_priority_encoder_behav xil_defaultlib.tb_priority_encoder xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_priority_encoder_behav xil_defaultlib.tb_priority_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'Y' [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_priority_encoder.v:28]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'A' [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_priority_encoder.v:29]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.priority_encode
+Compiling module xil_defaultlib.tb_priority_encoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_priority_encoder_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1087.754 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_priority_encoder_behav -key {Behavioral:sim_1:Functional:tb_priority_encoder} -tclbatch {tb_priority_encoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_priority_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_priority_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1087.754 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1141.527 ; gain = 53.773
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_priority_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_priority_encoder_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_priority_encoder_behav xil_defaultlib.tb_priority_encoder xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_priority_encoder_behav xil_defaultlib.tb_priority_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'Y' [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_priority_encoder.v:28]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'A' [G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_priority_encoder.v:29]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_priority_encoder_behav -key {Behavioral:sim_1:Functional:tb_priority_encoder} -tclbatch {tb_priority_encoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_priority_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_priority_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1141.527 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_priority_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_priority_encoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/priority_encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority_encode
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_priority_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_priority_encoder
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_priority_encoder_behav xil_defaultlib.tb_priority_encoder xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_priority_encoder_behav xil_defaultlib.tb_priority_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.priority_encode
+Compiling module xil_defaultlib.tb_priority_encoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_priority_encoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_priority_encoder_behav -key {Behavioral:sim_1:Functional:tb_priority_encoder} -tclbatch {tb_priority_encoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_priority_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error!
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_priority_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1141.527 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_priority_encoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_priority_encoder_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sources_1/new/priority_encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority_encode
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_priority_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_priority_encoder
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+"xelab -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_priority_encoder_behav xil_defaultlib.tb_priority_encoder xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 688271634a204db398f1e349694edcab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_priority_encoder_behav xil_defaultlib.tb_priority_encoder xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.priority_encode
+Compiling module xil_defaultlib.tb_priority_encoder
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_priority_encoder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_priority_encoder_behav -key {Behavioral:sim_1:Functional:tb_priority_encoder} -tclbatch {tb_priority_encoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source tb_priority_encoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error!
+$finish called at time : 90 ns : File "G:/Srilatha - Manipal/M.E - Embedded Systems/4. ACA/Lab/Verilog Programs/ACA_Assignment2/ACA_Lab_Assignment2/ACA_Lab_Assignment2.srcs/sim_1/new/tb_priority_encoder.v" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_priority_encoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1141.527 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 23 21:33:24 2022...
